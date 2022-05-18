@@ -15,8 +15,9 @@ select.fordform {
     color: #807d7d;
 }
 
-input:focus-visible {
+input:focus-visible, select:focus-visible, textarea:focus-visible {
     outline: none;
+    border: 1px solid #1351d8;
 }
 
 select:focus-visible {
@@ -49,6 +50,42 @@ button {
     float: right;
 }
 
+button:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
 .titulo {
     margin-left: 8px;
+}
+
+#mensagem {
+    resize: none;
+    display: block;
+    width: 300px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    height: 60px;
+    margin: 8px;
+    font-size: 13px;
+    padding: 5px;
+}
+
+.fordform:hover, #mensagem:hover {
+    border-color: #1351d8;
+}
+
+.mensagem-sucesso {
+    background-color: lightgreen;
+    padding: 15px;
+    text-align: center;
+}
+
+.mensagem-erro {
+    background-color: lightcoral;
+    padding: 15px; 
+    text-align: center;
 }
