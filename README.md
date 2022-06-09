@@ -22,6 +22,7 @@
 <h2 align="center">🛠 Ferramentas</h2>
 <ul>
   <li>Visual Studio Code</li>
+  <li>Git</li>
 </ul>
 
 <h2 align="center">:checkered_flag: Status</h2>
